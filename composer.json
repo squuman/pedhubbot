@@ -1,0 +1,6 @@
+{
+    "name": "astar/bot",
+    "require": {
+        "longman/telegram-bot": "^0.64.0"
+    }
+}
