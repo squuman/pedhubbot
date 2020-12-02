@@ -1,6 +1,8 @@
 <?php
-require __DIR__ .'/../vendor/autoload.php';
-require __DIR__ .'/../config.php';
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../config.php';
+
+$hook_url = 'https://pedhubbot.herokuapp.com/';
 
 try {
     // Create Telegram API object
@@ -14,5 +16,5 @@ try {
     }
 } catch (Longman\TelegramBot\Exception\TelegramException $e) {
     // log telegram errors
-     echo $e->getMessage();
+    echo $e->getMessage();
 }

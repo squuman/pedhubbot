@@ -1,4 +1,11 @@
+bot
 <?php
+
+use Longman\TelegramBot\Request;
+
 require __DIR__ .'/vendor/autoload.php';
 
-file_put_contents(__DIR__ .'/request.log',print_r($_REQUEST,true));
+$result = Request::sendMessage([
+    'chat_id' => $_REQUEST['chat_id'],
+    'text'    => 'sosat',
+]);
