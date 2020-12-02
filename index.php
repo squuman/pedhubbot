@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 $payload = json_encode($_REQUEST);
-$ch = curl_init("http://squuman.beget.tech/pedhubbot/index.php);
+$ch = curl_init("http://squuman.beget.tech/pedhubbot/index.php");
 # Setup request to send json via POST.
 curl_setopt( $ch, CURLOPT_POSTFIELDS, $_REQUEST );
 curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
